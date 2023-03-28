@@ -9,42 +9,53 @@ import SwiftUI
 
 struct HomePage: View {
     var body: some View {
-        VStack {
+        ZStack {
             VStack {
+                Spacer()
                 Image("MapatlanLogo")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                            Text("Bienvenido a la FES Acatán")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.horizontal, 50.0)
+                Text("Bienvenido a la FES Acatán")
                     .font(.largeTitle)
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .font(.system(size: 16, weight: .light, design: .default))
+                Spacer()
+                VStack {
+                    
+                    Button(action: {
+                            // Acción del primer botón
+                        }) {
+                        Text("Visitante")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 220, height: 60)
+                        .background(Color(red: 0.8352941176470589, green: 0.6235294117647059, blue: 0.058823529411764705))
+                        .cornerRadius(5.0)
+                        }
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    Button(action: {
+                        // Acción del segundo botón
+                        }) {
+                            Text("Comunidad")
+                                .font(.headline)
+                                .foregroundColor(.white)
                                 .padding()
-                            Button(action: {
-                                // Acción del primer botón
-                            }) {
-                                Text("Visitante")
-                                    .font(.headline)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .frame(width: 220, height: 60)
-                                    .background(Color.blue)
-                                    .cornerRadius(5.0)
-                            }
-                            Button(action: {
-                                // Acción del segundo botón
-                            }) {
-                                Text("Comunidad")
-                                    .font(.headline)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .frame(width: 220, height: 60)
-                                    .background(Color.blue)
-                                    .cornerRadius(5.0)
-                            }
-                            Spacer()
-
-            }.background(Color.white)
-        }.background(Color.blue)
+                                .frame(width: 220, height: 60)
+                                .background(Color(red: 0.8352941176470589, green: 0.6235294117647059, blue: 0.058823529411764705))
+                                .cornerRadius(5.0)
+                        }
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                }
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+            }.background(Color.white).padding(.vertical)
+        }.background(Color(red: 0.0, green: 0.23921568627450981, blue: 0.4745098039215686))
     }
 }
 

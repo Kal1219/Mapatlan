@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "MapatlanLogo 2.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "MapatlanLogo 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "MapatlanLogo.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
