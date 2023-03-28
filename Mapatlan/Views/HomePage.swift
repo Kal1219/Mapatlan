@@ -36,7 +36,7 @@ struct HomePage: View {
                             .padding()
                             .frame(width: 220, height: 60)
                             .background(Color(red: 0.8352941176470589, green: 0.6235294117647059, blue: 0.058823529411764705))
-                            .cornerRadius(5.0)
+                            .cornerRadius(15.0)
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                         Button(action: {
@@ -49,7 +49,7 @@ struct HomePage: View {
                                     .padding()
                                     .frame(width: 220, height: 60)
                                     .background(Color(red: 0.8352941176470589, green: 0.6235294117647059, blue: 0.058823529411764705))
-                                    .cornerRadius(5.0)
+                                    .cornerRadius(15.0)
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     }
