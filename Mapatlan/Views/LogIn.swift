@@ -22,6 +22,7 @@ struct LogIn: View {
                         .padding(.top)
                     HStack {
                         Spacer()
+                        Spacer()
                         VStack {
                             Image("User")
                                 .resizable()
@@ -62,6 +63,7 @@ struct LogIn: View {
                         }.background(Capsule().foregroundColor(Color(red: 0.0, green: 0.23921568627450981, blue: 0.4745098039215686))
                             .frame(width: 200))
                             Spacer()
+                        Spacer()
                     }
                     
                         //.frame(maxWidth: 300,maxHeight: 400)

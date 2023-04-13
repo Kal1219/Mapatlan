@@ -16,6 +16,7 @@
 		D54B61AC29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */; };
 		D557485D29D4CABA00964B74 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557485C29D4CABA00964B74 /* LogIn.swift */; };
 		D5A41C8129D4BA7200F2F282 /* WrongCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */; };
+		D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */; };
 		D5B4B6B729D383CA00174F5A /* ErrorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B6B629D383CA00174F5A /* ErrorPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapatlanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D557485C29D4CABA00964B74 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCredentials.swift; sourceTree = "<group>"; };
+		D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViw.swift; sourceTree = "<group>"; };
 		D5B4B6B629D383CA00174F5A /* ErrorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				D5B4B6B629D383CA00174F5A /* ErrorPage.swift */,
 				D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */,
 				D557485C29D4CABA00964B74 /* LogIn.swift */,
+				D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */,
 				D557485D29D4CABA00964B74 /* LogIn.swift in Sources */,
 				D5A41C8129D4BA7200F2F282 /* WrongCredentials.swift in Sources */,
 				D54B619129D22C4500D64F75 /* HomePage.swift in Sources */,
