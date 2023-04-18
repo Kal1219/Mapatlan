@@ -10,8 +10,11 @@ import SwiftUI
 struct HomePage: View {
     var body: some View {
         ZStack {
+            Color(red: 0.0, green: 0.23921568627450981, blue: 0.4745098039215686)
+                .ignoresSafeArea()
             VStack {
                 VStack {
+                    Spacer()
                     Spacer()
                     Image("MapatlanLogo")
                         .resizable()
@@ -54,12 +57,20 @@ struct HomePage: View {
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     }
                     Spacer()
-                    Image("BottomHome")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                }.background(Color.white).padding(.top).ignoresSafeArea()
+                    VStack
+                    {
+                        Image("BottomHome")
+                            .resizable()
+                            .aspectRatio(CGSize(width: 20, height: 3), contentMode: .fit)
+                    }
+                    .alignmentGuide(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Guide@*/.trailing/*@END_MENU_TOKEN@*/) { dimension in
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/dimension[.top]/*@END_MENU_TOKEN@*/
+                    }
+                }.background(Color.white).padding(.vertical)//.ignoresSafeArea()
             }.padding(.top)
-        }.background(Color(red: 0.0, green: 0.23921568627450981, blue: 0.4745098039215686))
+        }
+            
+            
     }
 }
 
