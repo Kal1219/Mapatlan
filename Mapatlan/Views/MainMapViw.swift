@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MainMapViw: View {
     var body: some View {
@@ -24,7 +25,8 @@ struct MainMapViw: View {
                 Text("Buscador")
                 Text("")
             }
-            Text("Mapa")
+            //let mapView = MKMapView()
+            
             Spacer()
         }
     }

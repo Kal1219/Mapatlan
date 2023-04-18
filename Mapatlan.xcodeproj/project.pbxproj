@@ -15,6 +15,7 @@
 		D54B61AA29D22C4600D64F75 /* MapatlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B61A929D22C4600D64F75 /* MapatlanUITests.swift */; };
 		D54B61AC29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */; };
 		D557485D29D4CABA00964B74 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557485C29D4CABA00964B74 /* LogIn.swift */; };
+		D5A13E1829EF407800ACC564 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D5A13E1729EF407800ACC564 /* MapboxMaps */; };
 		D5A41C8129D4BA7200F2F282 /* WrongCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */; };
 		D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */; };
 		D5B4B6B729D383CA00174F5A /* ErrorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B6B629D383CA00174F5A /* ErrorPage.swift */; };
@@ -52,6 +53,7 @@
 		D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCredentials.swift; sourceTree = "<group>"; };
 		D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViw.swift; sourceTree = "<group>"; };
 		D5B4B6B629D383CA00174F5A /* ErrorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPage.swift; sourceTree = "<group>"; };
+		D5BA098E29EF366600BE77E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A13E1829EF407800ACC564 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +132,7 @@
 		D54B618D29D22C4500D64F75 /* Mapatlan */ = {
 			isa = PBXGroup;
 			children = (
+				D5BA098E29EF366600BE77E4 /* Info.plist */,
 				D50D5BF129D23316003A34E2 /* Models */,
 				D50D5BF029D2321D003A34E2 /* Assets */,
 				D50D5BEF29D231A4003A34E2 /* Views */,
@@ -179,6 +183,9 @@
 			dependencies = (
 			);
 			name = Mapatlan;
+			packageProductDependencies = (
+				D5A13E1729EF407800ACC564 /* MapboxMaps */,
+			);
 			productName = Mapatlan;
 			productReference = D54B618B29D22C4500D64F75 /* Mapatlan.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +258,9 @@
 				Base,
 			);
 			mainGroup = D54B618229D22C4500D64F75;
+			packageReferences = (
+				D5A13E1629EF407800ACC564 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = D54B618C29D22C4500D64F75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -459,6 +469,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mapatlan/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mapatlan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +498,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mapatlan/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mapatlan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -617,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5A13E1629EF407800ACC564 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5A13E1729EF407800ACC564 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5A13E1629EF407800ACC564 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D54B618329D22C4500D64F75 /* Project object */;
 }
