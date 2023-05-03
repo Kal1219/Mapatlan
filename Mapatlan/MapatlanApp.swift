@@ -8,9 +8,12 @@
 import SwiftUI
 
 @main
-struct MapatlanApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct MapatlanApp: App
+{
+    var body: some Scene
+    {
+        WindowGroup
+        {
             HomePage()
         }
     }
