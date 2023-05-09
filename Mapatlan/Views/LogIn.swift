@@ -73,18 +73,19 @@ struct LogIn: View {
                         }
                         
                             //.frame(maxWidth: 300,maxHeight: 400)
-                        Button(action: {
-                            // Acción del botón
-                            }) {
-                                Text("Ingresar")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .frame(width: 220, height: 60)
-                                    .background(Color(red: 0.8352941176470589, green: 0.6235294117647059, blue: 0.058823529411764705))
-                                    .cornerRadius(15.0)
-                            }.padding(.vertical,30)
+                        NavigationLink {
+                            MapaView()
+                        } label: {
+                            Text("Ingresar")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(width: 220, height: 60)
+                                .background(Color(red: 0.8352941176470589, green: 0.6235294117647059, blue: 0.058823529411764705))
+                                .cornerRadius(15.0)
+                        }.padding(.vertical,30)
+
                     }
                     .background(.white)
                 }
