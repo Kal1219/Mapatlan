@@ -40,10 +40,9 @@ struct MapaView: View
                         }
                         
                     }
-                    .padding()
                     .aspectRatio( contentMode: .fit)
-                    Image("")
-                        .searchable(text: $searchText)
+                    .padding()
+                    
                     
                     
                 }
@@ -222,6 +221,7 @@ struct MapaView: View
                 }
                 .padding()
             }
+            .searchable(text: $searchText)
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
